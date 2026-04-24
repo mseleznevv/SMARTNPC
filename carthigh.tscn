@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dt8cvll3k3kta"]
+
+[ext_resource type="ArrayMesh" uid="uid://dr0u2113nk7br" path="res://Models/OBJ format/cart-high.obj" id="1_vt0r5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y5wwd"]
+size = Vector3(0.84033203, 0.784729, 1.2807617)
+
+[node name="CartHigh" type="Node3D" unique_id=1147709179]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1957477971]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=502707009]
+transform = Transform3D(2.37, 0, 0, 0, 2.37, 0, 0, 0, 2.37, -0.022565924, 0.9502208, 0.11305311)
+shape = SubResource("BoxShape3D_y5wwd")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=1975435003]
+transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 0, 0, 0)
+mesh = ExtResource("1_vt0r5")

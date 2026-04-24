@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dafm7rrkaw2lj"]
+
+[ext_resource type="ArrayMesh" uid="uid://y4ggv1mphec5" path="res://Models/OBJ format/rock-large.obj" id="1_6s6ed"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rq0vd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6s6ed"]
+size = Vector3(1, 1.892334, 1)
+
+[node name="Stone" type="Node3D" unique_id=119642247]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1198744141]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=520952826]
+transform = Transform3D(0.48, 0, 0, 0, 0.48, 0, 0, 0, 0.48, 0, 0, 0)
+mesh = ExtResource("1_6s6ed")
+surface_material_override/0 = SubResource("StandardMaterial3D_rq0vd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1389773386]
+transform = Transform3D(0.644457, 0, 0, 0, 1, 0, 0, 0, 0.6065111, 0, 1, 0)
+shape = SubResource("BoxShape3D_6s6ed")
