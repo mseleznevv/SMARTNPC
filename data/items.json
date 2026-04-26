@@ -1,0 +1,21 @@
+{
+	"rock": {
+		"name": "Камень",
+		"description": "Камневый камень",
+		"icon": "Previews/rock-small.png",
+		"stackable": false
+	},
+	"stick": {
+		"name": "Дерево",
+		"description": "Деревяное дерево",
+		"icon": "Previews/fence-broken.png",
+		"stackable": false
+	},
+	"potion_to_cast_finding_all_selected_resource": {
+		"name": "Зелье обнаружения ресурса",
+		"description": "выбери ресурс из предлагаемых и увидишь где они",
+		"icon": "Previews/wall-side.png",
+		"stackable": true,
+		"quantity": 1,
+	}
+}

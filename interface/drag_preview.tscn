@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://d025ylpu12nnt"]
+
+[ext_resource type="Script" uid="uid://djs0ncp2v0546" path="res://interface/DragPreview.gd" id="1_jfg38"]
+
+[node name="DragPreview" type="Control" unique_id=1419066631]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_jfg38")
+
+[node name="Item" type="Control" parent="." unique_id=1786476329]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -70.0
+offset_top = -70.0
+offset_right = 70.0
+offset_bottom = 70.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ItemIcon" type="TextureRect" parent="Item" unique_id=625867090]
+layout_mode = 0
+offset_right = 120.0
+offset_bottom = 120.0
+expand_mode = 2
+
+[node name="LabelQuantity" type="Label" parent="Item" unique_id=835588519]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -26.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 2

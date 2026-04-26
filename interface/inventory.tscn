@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://c4ry6ef31fjed"]
+
+[ext_resource type="Script" uid="uid://cb07ji18fanta" path="res://interface/InventoryHandler.gd" id="1_dn0yy"]
+[ext_resource type="Script" uid="uid://ex7mie4is520" path="res://scripts/InventoryMenu.gd" id="1_sc5wg"]
+[ext_resource type="PackedScene" uid="uid://d025ylpu12nnt" path="res://interface/drag_preview.tscn" id="3_lf0vd"]
+
+[node name="Inventory" type="Control" unique_id=465872323]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dn0yy")
+
+[node name="InventoryContainer" type="PanelContainer" parent="." unique_id=1060046615]
+layout_direction = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InventoryMenu" type="GridContainer" parent="InventoryContainer" unique_id=1216149949]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+columns = 6
+script = ExtResource("1_sc5wg")
+
+[node name="DragPreview" parent="InventoryContainer" unique_id=1419066631 instance=ExtResource("3_lf0vd")]
+layout_mode = 2
